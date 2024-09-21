@@ -1,0 +1,28 @@
+.Footer {
+    width: 100%;
+    background: #14110E;
+}
+
+.Footer ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+}
+
+.Footer ul a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 18px;
+}
+
+.Footer ul a:hover {
+    color: #ffffff90;
+}
+
+@media (max-width:768px) {
+    .Footer ul {
+        flex-direction: column;
+    }
+}

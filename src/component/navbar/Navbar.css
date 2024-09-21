@@ -1,0 +1,195 @@
+@import url(https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;800;900&display=swap);
+
+* {
+    margin: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.navbar {
+    width: 100%;
+    height: 100px;
+    background: #000;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+}
+
+.navbar a {
+    color: #fff;
+    text-decoration: none;
+    padding: 0 20px;
+    font-size: 18px;
+}
+
+.navbar a:hover {
+    color: #ffffff90;
+}
+
+.navbar .icons {
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+    margin-left: 20px;
+}
+
+.icons-menu {
+    display: none;
+}
+
+/* Menyu boshida yashiringan */
+#menuItems {
+    display: none;
+}
+
+/* Menyu ochilgan holatda */
+#menuItems.active {
+    display: flex;
+}
+
+.Navbar {
+    overflow: hidden;
+}
+
+@media screen and (max-width: 1000px) {
+    .navbar a {
+        padding: 0 6px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .navbar {
+        justify-content: center;
+    }
+
+    .navbar img {
+        height: auto;
+    }
+
+    .navbar ul {
+        display: none;
+        flex-direction: column;
+    }
+
+    .navbar li {
+        margin: 10px 0;
+    }
+
+    .navbar a {
+        padding: 10px;
+    }
+
+    .navbar .icons-menu {
+        display: block;
+        position: absolute;
+        top: 45px;
+        right: 15px;
+    }
+
+    .navbar ul {
+        flex-direction: column;
+        position: absolute;
+        top: 0px;
+        left: 0;
+        /* width: 100%; */
+        /* height: 100%; */
+        background-color: #3029D9;
+        z-index: 255;
+        margin-top: 100px;
+    }
+
+
+    .navbar ul li {
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    #menuItems.active {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+
+    .icons-menu {
+        color: white;
+    }
+
+    #menuItems {
+        display: none;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+
+    .navbar ul.active {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+
+
+    #navOne {
+        width: 94.5%;
+        overflow: hidden;
+        z-index: 1;
+        font-size: 20px;
+        background: #000;
+    }
+
+    #navTwo {
+        width: 94.5%;
+        overflow: hidden;
+        z-index: 0;
+        font-size: 20px;
+        background: #000;
+        padding-top: 270px;
+    }
+
+}
+
+@media (max-width: 400px) {
+    .navbar ul {
+        display: none;
+        flex-direction: column;
+    }
+
+    .navbar ul li {
+        text-align: center;
+        padding: 0;
+        margin: 0;
+    }
+
+    .navbar a {
+        padding: 0px;
+    }
+
+    #navOne {
+        width: 89.7%;
+    }
+
+    #navTwo {
+        width: 89.7%;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+
+    .navbar ul.active {
+        display: flex;
+        flex-direction: column;
+
+    }
+}

@@ -1,0 +1,61 @@
+.Testimonal {
+    width: 100%;
+    height: auto;
+    padding-bottom: 50px;
+    background: #14110E;
+}
+
+.card-comment {
+    width: 500px;
+    height: 200px;
+    padding: 20px;
+    margin-left: 15px;
+    background: #1C1814;
+}
+
+.card-flex {
+    display: flex;
+    align-items: center;
+}
+
+.card-comment p {
+    margin-left: 15px;
+    font-family: Urbanist;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 28.8px;
+    text-align: left;
+    color: #FFFFFFCC;
+}
+
+@media (max-width :950px) {
+    .Testimonal {
+        height: auto;
+    }
+
+    .Testimonal .d-flex {
+        flex-direction: column;
+    }
+
+    .card-comment {
+        margin-top: 30px;
+    }
+
+    @media (max-width: 580px) {
+        .card-comment {
+            width: 80%;
+            height: auto;
+        }
+
+        .card-flex p {
+            font-size: 14px;
+        }
+
+        .card-flex img {
+            width: 150px;
+        }
+
+
+    }
+
+}
